@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Teko:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Quicksand', sans-serif;
+}
+
+/* start navbar */
+header {
+    display: inline;
+    box-sizing: border-box;
+}
+
+nav {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+    position: sticky;
+    background-color: rgb(16, 244, 218);
+    top: 0;
+    box-shadow: 0px 1px 8px 1px rgba(0, 0, 0, 0.3);
+}
+
+nav .container {
+    box-sizing: border-box;
+    padding: 8px;
+    margin: auto;
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+}
+
+nav .container .logo {
+    width: 60%;
+}
+
+nav .container .logo a {
+    font-family: 'Teko', sans-serif;
+    text-decoration: none;
+    font-size: 35px;
+    color: rgb(89, 6, 150);
+}
+
+nav .container ul {
+    display: flex;
+    align-items: center;
+    width: 40%;
+    justify-content: space-between;
+}
+
+nav .container ul li {
+    list-style: none;
+}
+
+nav .container ul li a {
+    text-decoration: none;
+    font-size: 18px;
+    color: rgb(89, 6, 150);
+}
+/* end navbar */
+
+/* start main */
+main {
+    width: 85%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+#content {
+    margin-top: 10px;
+}
+
+.home {
+    height: 600px;
+    display: flex;
+    line-height: 100%;
+    width: 100%;
+    justify-content: space-between;
+    box-sizing: border-box;
+}
+
+.home img{
+    width: 50%;
+    height: fit-content;
+    margin: auto;
+    border-radius: 10px;
+}
+
+article .intro{
+    width: 45%;
+    height: 320px;
+    margin: auto;
+}
+
+article .intro .p1,
+article .intro .p3 {
+    font-size: 20px;
+    text-align: justify;
+    color: rgb(89, 6, 150);
+}
+
+article .intro .p1 {
+    margin-bottom: 15px;
+}
+
+article .intro .p2 {
+    font-size: 47px;
+    line-height: 1.2em;
+}
+
+article .intro .p3 {
+    margin-top: 15px;
+    line-height: 1em;
+}
+
+.our-course {
+    box-sizing: border-box;
+    line-height: 100%;
+    margin-bottom: 60px;
+    width: 100%;
+}
+
+.our-course h1,
+.profile h1,
+.contact h1 {
+    font-size: 25px;
+    text-align: center;
+    margin-bottom: 50px;
+    padding-top: 20px;
+    width: 100%;
+    color: rgb(89, 6, 150);
+}
+
+.our-course .list-corse {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 80%;
+    margin: auto;
+    box-sizing: border-box;
+}
+
+.list-corse .card {
+    box-sizing: border-box;
+    width: 26%;
+    height: 300px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 1px 8px 1px rgba(0, 0, 0, 0.3);
+}
+
+.list-corse .card .image {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #eaeaea;
+    height: 85%;
+    box-sizing: border-box;
+    line-height: 100%;
+    display: flex;
+}
+
+.list-corse .card .image img {
+    margin: auto;
+    box-sizing: border-box;
+    width: 85%;
+    height: fit-content;
+}
+
+.card .button {
+    background-color: rgb(111, 237, 214);
+    box-sizing: border-box;
+    height: 15%;
+    line-height: 100%;
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+.card .button p {
+    background-color: rgb(255, 149, 81);
+    margin: auto;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+}
+
+.card .button p:hover {
+    background-color: rgb(95, 208, 104);
+}
+
+aside {
+    height: 400px;
+    line-height: 100%;
+    display: flex;
+    margin-bottom: 60px;
+}
+
+aside article {
+    display: flex;
+    flex-direction: column;
+    line-height: 100%;
+}
+
+.profile-card {
+    box-sizing: border-box;
+    line-height: 100%;
+    margin: auto;
+    display: flex;
+    width: 60%;
+    justify-content: space-between;
+    background-color: #eaeaea;
+    border-radius: 10px;
+    box-shadow: 0px 1px 8px 1px rgba(0, 0, 0, 0.3);
+}
+
+.profile-card img {
+    padding: 20px;
+    box-sizing: border-box;
+    width: 30%;
+    border-radius: 30px;
+}
+
+.profile-card .detail-profile {
+    width: 65%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.detail-profile {
+    padding: 20px;
+    margin: auto;
+}
+
+.detail-profile div p {
+    font-size: 25px;
+    line-height: 1.2em;
+}
+
+.contact {
+    margin-bottom: 50px;
+}
+
+.contact .contact-person {
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-person div p {
+    text-align: center;
+}
+
+.contact .location iframe {
+    margin-top: 10px;
+    width: 100%;
+    box-shadow: 0px 1px 3px 1px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+}
+
+footer {
+    font-size: 20px;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(16, 244, 218);
+    color: rgb(89, 6, 150);
+}
+/* end main */
+
+/* Responsive */
+@media screen and (max-width: 436px) {
+    .our-course .list-corse {
+        flex-direction: column;
+    }
+
+    nav .container {
+        flex-direction: column;
+    }
+
+    nav .container .logo {
+        width: 100%;
+        text-align: center;
+    }
+
+    nav .container ul {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .home img {
+        width: 100%;
+    }
+
+    article .intro {
+        width: 100%;
+    }
+
+    article .intro .p1,
+    article .intro .p3 {
+        margin-top: 15px;
+        line-height: 1em;
+    }
+    
+    article .intro .p2 {
+        font-size: 25px;
+        line-height: 1.2em;
+    }
+
+    .list-corse .card {
+        width: 100%;
+    }
+
+    .profile-card {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .profile-card img {
+        width: 50%;
+        margin: auto;
+    }
+
+    .profile-card .detail-profile {
+        width: 90%;
+    }
+
+    .detail-profile div p {
+        font-size: 20px;
+        line-height: 1.2em;
+    }
+
+    .contact {
+        margin-top: 180px;
+    }
+
+    .contact .contact-person {
+        flex-direction: column;
+    }
+
+    .contact .contact-person div {
+        margin-bottom: 20px;
+    }
+}
+
+@media (min-width: 530px) and (max-width: 1024px) {
+    .our-course .list-corse {
+        flex-wrap: wrap;
+    }
+
+    nav .container .logo {
+        width: 100%;
+    }
+
+    nav .container ul {
+        width: 100%;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .home {
+        flex-direction: column;
+        margin-bottom: 90px;
+    }
+
+    .home img {
+        width: 90%;
+    }
+
+    article .intro {
+        width: 90%;
+        height: 230px;
+    }
+
+    article .intro .p1,
+    article .intro .p3 {
+        margin-top: 10px;
+        line-height: 1em;
+    }
+    
+    article .intro .p2 {
+        font-size: 35px;
+        line-height: 1.2em;
+    }
+
+    .list-corse .card {
+        width: 45%;
+    }
+
+    .profile-card {
+        width: 85%;
+    }
+
+    .profile-card img {
+        width: 30%;
+        margin: auto;
+    }
+
+    .profile-card .detail-profile {
+        width: 70%;
+    }
+
+    .detail-profile div p {
+        font-size: 20px;
+        line-height: 1.2em;
+    }
+
+    .contact .contact-person {
+        flex-wrap: wrap;
+    }
+
+    .contact .contact-person div {
+        margin-bottom: 30px;
+        width: 45%;
+    }
+}
